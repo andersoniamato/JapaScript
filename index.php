@@ -9,15 +9,16 @@
 <div class="container">
 	<div class="row form-group">
 		<div class="col-md-6">
-			<form action="ControlPay/Terminais_fisicos.php" method="get"> <input type="submit" value="ControlPay Consulta terminais físicos"  class="btn btn-primary"/></form><br>
+			<form action="ControlPay/Menu.php" method="get"> <input type="submit" value="ControlPay"  class="btn btn-primary"/></form><br>
 		</div>
 		<div class="col-md-6">
-			<form action="ControlPay/Consulta_email.php" method="get"> <input type="submit" value="ControlPay Consulta e-mail"  class="btn btn-primary"/></form><br>
+			<form action="Homologacao/Menu.php" method="get"> <input type="submit" value="Homologação"  class="btn btn-primary"/></form><br>
 		</div>
-	</div>
-	<div class="row form-group">
 		<div class="col-md-6">
-			<form action="Gateway/Consulta.php" method="get"> <input type="submit" value="Gateway Consulta" class="btn btn-primary"/></form><br>
+			<form action="Gateway/Menu.php" method="get"> <input type="submit" value="Gateway" class="btn btn-primary"/></form><br>
+		</div>
+		<div class="col-md-6">
+			<form action="Piloto/Menu.php" method="get"> <input type="submit" value="Piloto" class="btn btn-primary"/></form><br>
 		</div>
 	</div>
 </div>
