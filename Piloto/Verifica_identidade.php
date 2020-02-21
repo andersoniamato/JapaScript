@@ -21,24 +21,5 @@
 	</form>
 	</div>
 
-<script type="text/javascript">
-  $(function() {
-      
-      $('#RunVerifica_identidade button').on('click', function(){
-        $.ajax({
-        url: "RunVerifica_identidade.php",
-        method: "post",
-        data: $('#RunVerifica_identidade').serialize(),
-        success: function(data) {
-
-            alert('Terminal liberado com sucesso!')
-          
-        }
-      })
-      })
-      
-  })
-</script>
-
 </body>
 </html>
