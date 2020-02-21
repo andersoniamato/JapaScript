@@ -13,7 +13,7 @@ echo "
       <thead>
         <tr>
           <th scope='col-md-6'><label>CNPJ</label></th>
-          <th scope='col-md-6'><label>E-mail</label></th>
+          <th scope='col-md-6'><label>Identidade</label></th>
         </tr>
       </thead>
       <tbody>";
