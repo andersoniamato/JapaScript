@@ -11,7 +11,9 @@
 		<div class="col-md-6">
 			<form action="Crusador.php" method="get"> <input type="submit" value="Crusador"  class="btn btn-primary"/></form><br>
 		</div>
-		
+		<div class="col-md-6">
+			<form action="Verifica_identidade.php" method="get"> <input type="submit" value="Verificar identidade"  class="btn btn-primary"/></form><br>
+		</div>
 	</div>
 </div>
 
