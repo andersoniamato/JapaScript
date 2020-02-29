@@ -53,7 +53,12 @@ $curl = '';
     $zeraPontoCaptura = $terminalFisico1->terminalFisico->pontoCaptura;
     $zeraAmbientePgw  = $terminalFisico1->terminalFisico->ambientePGW;
     $zeraUsaPinPad    = $terminalFisico1->terminalFisico->usaPinPad;
+    $zeraAppAtualizacao    = $terminalFisico1->terminalFisico->appAtualizacao;
+    $zeraAppAtualizacaoId  = $terminalFisico1->terminalFisico->appAtualizacao->id;
+    $zeraAppAtualizacaoObrigatoria    = $terminalFisico1->terminalFisico->appAtualizacaoObrigatoria;
 
+    var_dump($zeraUsaPinPad);
+    var_dump($zeraAppAtualizacaoObrigatoria);
 
 
 $curl = curl_init();
@@ -77,9 +82,12 @@ $curl_setopt_array = curl_setopt_array($curl, array(
     \"nome\": \"$zeraNome\",
     \"pontoCaptura\": \"$zeraPontoCaptura\",
     \"ambientePgw\": \"$zeraAmbientePgw\",
-    \"usaPinPad\": $zeraUsaPinPad,
     \"status\": \"$zeraStatus\",
-    \"obs\":\"$zeraObs\"
+    \"obs\":\"$zeraObs\",
+    \"usaPinPad\": $zeraUsaPinPad,
+    \"appAtualizacaoId\": \"$zeraAppAtualizacaoId\",
+    \"appAtualizacaoObrigatoria\": $zeraAppAtualizacaoObrigatoria
+    
    }",
 
   CURLOPT_HTTPHEADER => array(
@@ -104,6 +112,7 @@ $curl_setopt_array = curl_setopt_array($curl, array(
       }
       $curl = '';
     }
+
 
 ?>
 

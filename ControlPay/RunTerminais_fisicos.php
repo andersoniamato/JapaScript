@@ -87,8 +87,8 @@ $curl_setopt_array = curl_setopt_array($curl, array(
           <td>".$terminal->id."</td>
           <td>".$terminal->nome."</td>
           <td>";?>
-            <form method= "POST" id="zeraTerminal.php" >
-              <input type= "hidden" id= "zeraId" value="<?php echo $terminal->terminalFisico->id; ?>" name="zeraId">
+            <form method= "POST" action="zeraTerminal.php" >
+              <input type= "hidden" id= "zeraId" value="<?php echo $terminal->terminalFisico->id; ?>"name="zeraId">
               <input type= "hidden" id= "zeraPessoaId" value="<?php echo $id_pessoa; ?>" name= "zeraPessoaId">
               <input type= "hidden" id= "key" value="<?php echo $key; ?>"name= "zeraKey">
               <button type="submit" class="btn btn-primary">Liberar terminal</button>
