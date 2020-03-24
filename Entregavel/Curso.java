@@ -71,7 +71,7 @@ public class Curso {
     }
 
     public Boolean adicionarUmAluno(Aluno umAluno){
-        if (quantidadeMaxAlunos + 1 > quantidadeMaxAlunos)
+        if (listaAlunos.size() < quantidadeMaxAlunos)
         {
             listaAlunos.add(umAluno);
             return true;
